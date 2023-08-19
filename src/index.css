@@ -132,6 +132,65 @@ header form {
 }
 
 .card-pokemon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 9px;
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    margin-bottom: 20px; /* Agrega margen inferior entre las cards */
+}
+
+.card-img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea la imagen a la derecha */
+    flex: 1; /* Toma todo el espacio disponible */
+    height: 250px;
+    background-color: #f2f2f2;
+}
+
+.card-img img {
+    max-width: 100%; /* Ajusta el tamaño de la imagen */
+    max-height: 100%; /* Ajusta el tamaño de la imagen */
+}
+
+.card-info {
+    padding: 15px;
+}
+
+.card-info h3 {
+    color: #333;
+}
+
+.pokemon-id {
+    display: block;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.card-types {
+    display: flex;
+    gap: 10px;
+    margin-top: 9px;
+	color: #000;
+	font-weight: bold;
+}
+
+.card-types span {
+    font-size: 12px;
+    padding: 5px 3px;
+    border-radius: 5px;
+    color: #fff;
+}
+/*
+.card-list-pokemon {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+
+.card-pokemon {
 	cursor: pointer;
 	text-decoration: none;
 }
@@ -177,78 +236,96 @@ header form {
 	border-radius: 5px;
 	color: #fff;
 }
-
+*/
 /* Types of Pokemon */
 .water {
-	background-color: var(--color-water);
+	background-color: #4bb1f4;
+	font-weight: bold;
 }
 
 .grass {
-	background-color: var(--color-grass);
+	background-color:  #9fce84;
+	font-weight: bold;
 }
 
 .poison {
 	background-color: var(--color-poison);
+	color: white;
 }
 
 .fire {
 	background-color: var(--color-fire);
+	font-weight: bold;
 }
 
 .bug {
 	background-color: var(--color-bug);
+	font-weight: bold;
 }
 
 .dragon {
 	background: var(--color-dragon);
+	font-weight: bold;
 }
 
 .flying {
 	background-color: var(--color-flying);
+	font-weight: bold;
 }
 
 .ground {
 	background-color: var(--color-ground);
+	font-weight: bold;
 }
 
 .steel {
 	background-color: var(--color-steel);
+	font-weight: bold;
 }
 
 .psychic {
 	background-color: var(--color-psychic);
+	font-weight: bold;
 }
 
 .ice {
 	background-color: var(--color-ice);
+	font-weight: bold;
 }
 
 .ghost {
 	background-color: var(--color-ghost);
+	font-weight: bold;
 }
 
 .normal {
 	background-color: var(--color-normal);
+	font-weight: bold;
 }
 
 .rock {
 	background-color: var(--color-rock);
+	font-weight: bold;
 }
 
 .electric {
 	background-color: var(--color-electric);
+	font-weight: bold;
 }
 
 .fighting {
 	background-color: var(--color-fighting);
+	font-weight: bold;
 }
 
 .fairy {
 	background-color: var(--color-fairy);
+	font-weight: bold;
 }
 
 .dark {
 	background-color: var(--color-dark);
+	font-weight: bold;
 }
 
 /* Container Filters */
@@ -419,6 +496,7 @@ Styles of Pokemon Single Page
 .container-loader{
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	margin: 200px 0;
 }
 

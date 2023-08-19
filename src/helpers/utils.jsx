@@ -63,3 +63,7 @@ export const formatCash = Intl.NumberFormat("es-CO", {
 export const isNumber = (value) => {
   if (typeof value === "string") return !isNaN(value);
 }
+
+export const primerMayuscula = (word) =>{
+return word[0].toUpperCase() + word.substring(1)
+}

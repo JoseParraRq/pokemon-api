@@ -8,7 +8,7 @@ export const AppRouter = () => {
         <Routes>
             <Route path='/' element={<Navigation />}>
                 <Route index element={<HomePage/>}/>
-                <Route path='pokemon/:id' element={<PokemonPage/>}/>
+                {/* <Route path='pokemon/:id' element={<PokemonPage/>}/> */}
                 <Route path='search' element={<SearchPage/>}/>
             </Route>
 
